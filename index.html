@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>লক্ষ্মীপুর রমজান সময়সূচি ২০২৬</title>
+<meta name="description" content="লক্ষ্মীপুর জেলার সাহরী ও ইফতারের সময়সূচি – পবিত্র রমজান ২০২৬">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;500;600;700&family=Lateef:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gd:#0d4a2e;--gm:#1a6b40;--gl:#2d8c55;
+  --gp:#e6f2eb;--gold:#c9a227;--goldl:#e8c547;
+  --bg:#eff3f0;--w:#fff;--tx:#1a1a1a;--txm:#555;--txl:#888;
+  --bd:#cfe0d5;--sh:0 3px 14px rgba(13,74,46,.10);
+  --r:13px;--tbg:#fffaea;--mw:460px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+
+html{background:var(--gd);min-height:100%;}
+
+body{
+  font-family:'Noto Serif Bengali',serif;
+  background:var(--bg);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Cpath d='M22 2L42 22L22 42L2 22Z' fill='none' stroke='%230d4a2e' stroke-width='0.4' opacity='0.06'/%3E%3C/svg%3E");
+  color:var(--tx);min-height:100vh;
+  max-width:var(--mw);margin:0 auto;
+  box-shadow:0 0 40px rgba(0,0,0,.28);
+}
+
+/* DARK MODE */
+body.dark{
+  --bg:#0e1a12;--w:#162013;--gp:#152219;--bd:#1d3826;
+  --tx:#ddeee5;--txm:#8aaa94;--txl:#5a7a64;--tbg:#1e1a00;
+  --sh:0 3px 14px rgba(0,0,0,.32);
+}
+body.dark .cdown{background:#1a1500;border-color:#3a2e00;}
+body.dark .btn{background:var(--w);border-color:var(--bd);}
+body.dark .btn.pri{background:var(--gm);color:#fff;border-color:var(--gm);}
+
+/* ── HEADER ── */
+header{
+  background:linear-gradient(155deg,#0a3d24 0%,var(--gm) 65%,#318055 100%);
+  color:#fff;text-align:center;padding:30px 16px 22px;
+  position:relative;overflow:hidden;
+}
+header::after{
+  content:'';position:absolute;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M30 3L57 30L30 57L3 30Z' fill='none' stroke='white' stroke-width='0.7' opacity='0.07'/%3E%3C/svg%3E");
+  pointer-events:none;
+}
+.hinner{position:relative;z-index:1;}
+.hlants{position:absolute;top:10px;left:0;right:0;display:flex;justify-content:space-between;padding:0 12px;z-index:2;}
+.lant{font-size:1.5rem;opacity:.72;animation:sway 3s ease-in-out infinite;display:block;}
+.lant:last-child{animation-delay:1.5s;}
+@keyframes sway{0%,100%{transform:rotate(-6deg);}50%{transform:rotate(6deg);}}
+.bism{font-family:'Lateef',serif;font-size:1.95rem;color:var(--goldl);margin-bottom:7px;text-shadow:0 2px 8px rgba(0,0,0,.3);}
+header h1{font-size:1rem;font-weight:700;line-height:1.45;margin-bottom:4px;}
+header .sub{font-size:0.76rem;opacity:.82;}
+.hbadge{display:inline-block;background:rgba(201,162,39,.2);border:1px solid rgba(201,162,39,.45);color:var(--goldl);padding:3px 12px;border-radius:50px;font-size:0.7rem;margin-top:8px;}
+
+/* ── CONTENT ── */
+.ct{padding:0 10px 20px;}
+
+/* ── TODAY CARD ── */
+.today{background:var(--w);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;margin-top:11px;animation:up .42s ease both;}
+@keyframes up{from{opacity:0;transform:translateY(13px);}to{opacity:1;transform:translateY(0);}}
+
+.ch{background:linear-gradient(135deg,var(--gd),var(--gm));color:#fff;padding:12px 13px 11px;}
+.chtop{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;}
+.rlabel h2{font-size:0.96rem;font-weight:700;line-height:1.3;}
+.rlabel p{font-size:0.7rem;opacity:.76;margin-top:2px;}
+
+.sirow{display:grid;grid-template-columns:1fr 1fr;gap:7px;}
+.sipill{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);border-radius:9px;padding:8px 10px;display:flex;align-items:center;gap:7px;}
+.sipill .ico{font-size:1.2rem;}
+.sipill .lbl{font-size:0.62rem;opacity:.76;margin-bottom:1px;}
+.sipill .val{font-size:0.93rem;font-weight:700;}
+.sipill.su .val{color:#b8f0d0;}
+.sipill.if .val{color:var(--goldl);}
+
+/* prayer row */
+.prow{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--bd);}
+.pi{text-align:center;padding:8px 2px;border-right:1px solid var(--bd);}
+.pi:last-child{border-right:none;}
+.pico{font-size:.95rem;margin-bottom:2px;}
+.pname{font-size:0.6rem;color:var(--txl);margin-bottom:2px;}
+.ptime{font-size:0.68rem;font-weight:700;color:var(--gd);line-height:1.2;}
+
+/* ── COUNTDOWN ── */
+.cdown{
+  background:linear-gradient(135deg,#fffbea,#fff8d4);
+  border:1px solid rgba(201,162,39,.36);border-radius:var(--r);
+  padding:9px 12px;margin-top:8px;
+  display:flex;align-items:center;gap:8px;
+  animation:up .42s .06s ease both;
+}
+.cdlbl{font-size:0.74rem;color:var(--txm);white-space:nowrap;}
+.cdtime{font-size:1.15rem;font-weight:700;color:var(--gd);font-variant-numeric:tabular-nums;letter-spacing:.4px;}
+.cddesc{font-size:0.71rem;color:var(--gold);flex:1;}
+
+/* ── BUTTONS ── */
+.btns{display:flex;gap:7px;margin-top:8px;animation:up .42s .1s ease both;}
+.btn{
+  flex:1;padding:8px 4px;border-radius:8px;
+  border:1px solid var(--bd);background:var(--w);color:var(--gd);
+  font-family:inherit;font-size:0.71rem;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:4px;
+  font-weight:600;transition:transform .14s;
+  -webkit-tap-highlight-color:transparent;
+}
+.btn:active{transform:scale(.96);}
+.btn.pri{background:var(--gd);color:#fff;border-color:var(--gd);}
+
+/* ── SECTION ── */
+.sec{margin-top:13px;animation:up .42s .14s ease both;}
+.stitle{display:flex;align-items:center;gap:7px;margin-bottom:8px;}
+.sline{flex:1;height:1px;background:linear-gradient(to right,var(--gm),transparent);}
+.sline.r{background:linear-gradient(to left,var(--gm),transparent);}
+.stitle h3{font-size:0.8rem;font-weight:700;color:var(--gd);white-space:nowrap;padding:5px 11px;background:var(--gp);border-radius:50px;border:1px solid var(--bd);}
+
+/* ── TABLE ── */
+.tcard{background:var(--w);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;border:1px solid var(--bd);}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+table{width:100%;border-collapse:collapse;min-width:300px;}
+thead tr{background:linear-gradient(135deg,var(--gd),var(--gm));color:#fff;position:sticky;top:0;z-index:5;}
+thead th{padding:10px 5px;font-size:0.71rem;font-weight:600;text-align:center;white-space:nowrap;}
+tbody tr{border-bottom:1px solid var(--bd);}
+tbody tr:last-child{border-bottom:none;}
+tbody tr.past{opacity:.45;}
+tbody tr.today{background:var(--tbg)!important;box-shadow:inset 3px 0 0 var(--gold);font-weight:600;}
+tbody td{padding:9px 5px;text-align:center;font-size:0.76rem;}
+.rn{display:inline-flex;width:23px;height:23px;align-items:center;justify-content:center;border-radius:50%;font-weight:700;font-size:0.68rem;}
+tr.today .rn{background:var(--gold);color:#fff;}
+tr:not(.today) .rn{background:var(--gp);color:var(--gd);}
+.tbdg{display:inline-block;background:var(--gold);color:#fff;font-size:0.54rem;padding:1px 5px;border-radius:20px;margin-left:3px;vertical-align:middle;font-weight:700;}
+.tc{font-weight:600;color:var(--gd);font-size:0.74rem;}
+
+/* ── DUA ── */
+.dstack{display:flex;flex-direction:column;gap:8px;}
+.dcard{background:var(--w);border-radius:var(--r);border:1px solid var(--bd);box-shadow:var(--sh);overflow:hidden;}
+.dhead{background:linear-gradient(135deg,var(--gd),var(--gm));color:#fff;padding:11px 13px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;}
+.dhead h4{font-size:0.82rem;font-weight:600;}
+.dtog{width:22px;height:22px;background:rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.78rem;transition:transform .28s;flex-shrink:0;}
+.dcard.open .dtog{transform:rotate(180deg);}
+.dbody{display:none;padding:12px;}
+.dcard.open .dbody{display:block;}
+.arabic{font-family:'Lateef',serif;font-size:1.6rem;direction:rtl;text-align:right;color:var(--gd);line-height:1.85;margin-bottom:10px;padding:10px 12px;background:var(--gp);border-radius:8px;border-right:3px solid var(--gm);}
+.dlbl{font-size:0.61rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.7px;margin-bottom:3px;}
+.dbody p{font-size:0.76rem;line-height:1.65;margin-bottom:7px;}
+.uc{color:var(--txm);}
+.ort{color:var(--gd);font-style:italic;}
+
+/* ── FOOTER ── */
+footer{background:var(--gd);color:rgba(255,255,255,.8);padding:16px 13px 24px;text-align:center;margin-top:14px;}
+.fnote{background:rgba(201,162,39,.12);border:1px solid rgba(201,162,39,.28);border-radius:9px;padding:10px 11px;margin-bottom:10px;font-size:0.69rem;line-height:1.7;color:#dfc96a;}
+.fs{font-size:0.66rem;opacity:.52;}
+.fdev{font-size:0.7rem;opacity:.76;margin-top:5px;}
+.fdev a{color:var(--goldl);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(232,197,71,.35);}
+
+@media print{
+  html{background:#fff;}
+  body{box-shadow:none;max-width:100%;}
+  .btns,.dstack,.cdown{display:none!important;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hlants"><span class="lant">🪔</span><span class="lant">🪔</span></div>
+  <div class="hinner">
+    <div class="bism">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+    <h1>রমজানের সাহরী ও ইফতারের সময়সূচি</h1>
+    <div class="sub">স্থানঃ লক্ষ্মীপুর জেলা — চট্টগ্রাম বিভাগ</div>
+    <div class="hbadge">☪ পবিত্র রমজান ১৪৪৭ হিজরি – ২০২৬ ইং ☪</div>
+  </div>
+</header>
+
+<div class="ct">
+
+  <!-- TODAY CARD -->
+  <div class="today">
+    <div class="ch">
+      <div class="chtop">
+        <div class="rlabel">
+          <h2 id="todayRamadanTitle">রমজান ১৪৪৭ হিজরি</h2>
+          <p id="todayDateBn">লোড হচ্ছে...</p>
+        </div>
+      </div>
+      <div class="sirow">
+        <div class="sipill su">
+          <span class="ico">🌙</span>
+          <div><div class="lbl">সাহরীর শেষ সময়</div><div class="val" id="todaySuhoor">--:--</div></div>
+        </div>
+        <div class="sipill if">
+          <span class="ico">🥤</span>
+          <div><div class="lbl">ইফতার</div><div class="val" id="todayIftar">--:--</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="prow">
+      <div class="pi"><div class="pico">🌅</div><div class="pname">ফজর</div><div class="ptime" id="pFajr">--</div></div>
+      <div class="pi"><div class="pico">☀️</div><div class="pname">যোহর</div><div class="ptime" id="pDhuhr">--</div></div>
+      <div class="pi"><div class="pico">🌤️</div><div class="pname">আসর</div><div class="ptime" id="pAsr">--</div></div>
+      <div class="pi"><div class="pico">🌆</div><div class="pname">মাগরিব</div><div class="ptime" id="pMaghrib">--</div></div>
+      <div class="pi"><div class="pico">🌙</div><div class="pname">ইশা</div><div class="ptime" id="pIsha">--</div></div>
+    </div>
+  </div>
+
+  <!-- COUNTDOWN -->
+  <div class="cdown">
+    <span style="font-size:1.1rem">⏳</span>
+    <span class="cdlbl">পরবর্তী</span>
+    <span class="cdtime" id="countdownTimer">--:--:--</span>
+    <span class="cddesc" id="countdownDesc">লোড হচ্ছে...</span>
+  </div>
+
+  <!-- BUTTONS -->
+  <div class="btns">
+    <button class="btn" onclick="toggleDark()">🌙 ডার্ক মোড</button>
+    <button class="btn" onclick="window.print()">🖨️ প্রিন্ট</button>
+    <button class="btn pri" onclick="scrollToToday()">📍 আজকে দেখুন</button>
+  </div>
+
+  <!-- TABLE -->
+  <div class="sec">
+    <div class="stitle">
+      <div class="sline"></div>
+      <h3>📅 সম্পূর্ণ সময়সূচি</h3>
+      <div class="sline r"></div>
+    </div>
+    <div class="tcard">
+      <div class="tscroll">
+        <table>
+          <thead><tr><th>রমজান</th><th>তারিখ</th><th>বার</th><th>সাহরী শেষ</th><th>ইফতার</th></tr></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- DUA -->
+  <div class="sec">
+    <div class="stitle">
+      <div class="sline"></div>
+      <h3>🤲 আজকের দোয়া <span id="duaSub" style="font-weight:400;opacity:.7;font-size:.85em;"></span></h3>
+      <div class="sline r"></div>
+    </div>
+    <div class="dstack" id="duaGrid"></div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="fnote">⚠️ রমজান চাঁদ দেখার উপর ভিত্তি করে তারিখ পরিবর্তন হতে পারে। সময়সূচি লক্ষ্মীপুর জেলার স্থানীয় সময় অনুযায়ী নির্ধারিত। সাহরীর শেষ সময় ফজরের ওয়াক্তের ৫ মিনিট পূর্বে এবং ইফতার সূর্যাস্তের ৩ মিনিট পর বিবেচনা করা হয়েছে।</div>
+  <div class="fs">লক্ষ্মীপুর রমজান সময়সূচি ২০২৬ | চট্টগ্রাম বিভাগীয় সময় অনুযায়ী</div>
+  <div class="fdev">© 2026 সর্বস্বত্ব সংরক্ষিত | Developed by <a href="https://www.facebook.com/rakibnur.me/" target="_blank" rel="noopener">Rakib Nur</a></div>
+</footer>
+
+<script>
+const D=[
+  {day:1, date:"১৯-০২-২৬",dateEn:"2026-02-19",bar:"বৃহঃ", suhoor:"05:06",fajr:"05:11",dhuhr:"12:13",asr:"16:19",iftar:"17:59",isha:"19:12"},
+  {day:2, date:"২০-০২-২৬",dateEn:"2026-02-20",bar:"শুক্র", suhoor:"05:05",fajr:"05:10",dhuhr:"12:13",asr:"16:19",iftar:"17:59",isha:"19:12"},
+  {day:3, date:"২১-০২-২৬",dateEn:"2026-02-21",bar:"শনি",  suhoor:"05:04",fajr:"05:09",dhuhr:"12:13",asr:"16:19",iftar:"17:58",isha:"19:11"},
+  {day:4, date:"২২-০২-২৬",dateEn:"2026-02-22",bar:"রবি",  suhoor:"05:04",fajr:"05:09",dhuhr:"12:13",asr:"16:19",iftar:"17:58",isha:"19:11"},
+  {day:5, date:"২৩-০২-২৬",dateEn:"2026-02-23",bar:"সোম",  suhoor:"05:03",fajr:"05:08",dhuhr:"12:12",asr:"16:19",iftar:"17:59",isha:"19:12"},
+  {day:6, date:"২৪-০২-২৬",dateEn:"2026-02-24",bar:"মঙ্গল",suhoor:"05:02",fajr:"05:07",dhuhr:"12:12",asr:"16:20",iftar:"17:59",isha:"19:12"},
+  {day:7, date:"২৫-০২-২৬",dateEn:"2026-02-25",bar:"বুধ",  suhoor:"05:01",fajr:"05:06",dhuhr:"12:12",asr:"16:20",iftar:"18:00",isha:"19:13"},
+  {day:8, date:"২৬-০২-২৬",dateEn:"2026-02-26",bar:"বৃহঃ", suhoor:"05:01",fajr:"05:06",dhuhr:"12:12",asr:"16:20",iftar:"18:00",isha:"19:13"},
+  {day:9, date:"২৭-০২-২৬",dateEn:"2026-02-27",bar:"শুক্র", suhoor:"05:00",fajr:"05:05",dhuhr:"12:12",asr:"16:21",iftar:"18:01",isha:"19:14"},
+  {day:10,date:"২৮-০২-২৬",dateEn:"2026-02-28",bar:"শনি",  suhoor:"04:59",fajr:"05:04",dhuhr:"12:11",asr:"16:21",iftar:"18:01",isha:"19:14"},
+  {day:11,date:"০১-০৩-২৬",dateEn:"2026-03-01",bar:"রবি",  suhoor:"04:58",fajr:"05:03",dhuhr:"12:11",asr:"16:21",iftar:"18:02",isha:"19:15"},
+  {day:12,date:"০২-০৩-২৬",dateEn:"2026-03-02",bar:"সোম",  suhoor:"04:57",fajr:"05:02",dhuhr:"12:11",asr:"16:22",iftar:"18:02",isha:"19:15"},
+  {day:13,date:"০৩-০৩-২৬",dateEn:"2026-03-03",bar:"মঙ্গল",suhoor:"04:56",fajr:"05:01",dhuhr:"12:11",asr:"16:22",iftar:"18:03",isha:"19:16"},
+  {day:14,date:"০৪-০৩-২৬",dateEn:"2026-03-04",bar:"বুধ",  suhoor:"04:56",fajr:"05:01",dhuhr:"12:11",asr:"16:23",iftar:"18:03",isha:"19:16"},
+  {day:15,date:"০৫-০৩-২৬",dateEn:"2026-03-05",bar:"বৃহঃ", suhoor:"04:55",fajr:"05:00",dhuhr:"12:10",asr:"16:23",iftar:"18:04",isha:"19:17"},
+  {day:16,date:"০৬-০৩-২৬",dateEn:"2026-03-06",bar:"শুক্র", suhoor:"04:54",fajr:"04:59",dhuhr:"12:10",asr:"16:23",iftar:"18:04",isha:"19:17"},
+  {day:17,date:"০৭-০৩-২৬",dateEn:"2026-03-07",bar:"শনি",  suhoor:"04:53",fajr:"04:58",dhuhr:"12:10",asr:"16:24",iftar:"18:05",isha:"19:18"},
+  {day:18,date:"০৮-০৩-২৬",dateEn:"2026-03-08",bar:"রবি",  suhoor:"04:52",fajr:"04:57",dhuhr:"12:10",asr:"16:24",iftar:"18:05",isha:"19:18"},
+  {day:19,date:"০৯-০৩-২৬",dateEn:"2026-03-09",bar:"সোম",  suhoor:"04:51",fajr:"04:56",dhuhr:"12:09",asr:"16:25",iftar:"18:05",isha:"19:18"},
+  {day:20,date:"১০-০৩-২৬",dateEn:"2026-03-10",bar:"মঙ্গল",suhoor:"04:50",fajr:"04:55",dhuhr:"12:09",asr:"16:25",iftar:"18:06",isha:"19:19"},
+  {day:21,date:"১১-০৩-২৬",dateEn:"2026-03-11",bar:"বুধ",  suhoor:"04:49",fajr:"04:54",dhuhr:"12:09",asr:"16:25",iftar:"18:06",isha:"19:19"},
+  {day:22,date:"১২-০৩-২৬",dateEn:"2026-03-12",bar:"বৃহঃ", suhoor:"04:48",fajr:"04:53",dhuhr:"12:09",asr:"16:26",iftar:"18:07",isha:"19:20"},
+  {day:23,date:"১৩-০৩-২৬",dateEn:"2026-03-13",bar:"শুক্র", suhoor:"04:47",fajr:"04:52",dhuhr:"12:08",asr:"16:26",iftar:"18:07",isha:"19:20"},
+  {day:24,date:"১৪-০৩-২৬",dateEn:"2026-03-14",bar:"শনি",  suhoor:"04:46",fajr:"04:51",dhuhr:"12:08",asr:"16:27",iftar:"18:08",isha:"19:21"},
+  {day:25,date:"১৫-০৩-২৬",dateEn:"2026-03-15",bar:"রবি",  suhoor:"04:45",fajr:"04:50",dhuhr:"12:08",asr:"16:27",iftar:"18:08",isha:"19:21"},
+  {day:26,date:"১৬-০৩-২৬",dateEn:"2026-03-16",bar:"সোম",  suhoor:"04:44",fajr:"04:49",dhuhr:"12:08",asr:"16:27",iftar:"18:08",isha:"19:21"},
+  {day:27,date:"১৭-০৩-২৬",dateEn:"2026-03-17",bar:"মঙ্গল",suhoor:"04:43",fajr:"04:48",dhuhr:"12:07",asr:"16:28",iftar:"18:09",isha:"19:22"},
+  {day:28,date:"১৮-০৩-২৬",dateEn:"2026-03-18",bar:"বুধ",  suhoor:"04:42",fajr:"04:47",dhuhr:"12:07",asr:"16:28",iftar:"18:09",isha:"19:22"},
+  {day:29,date:"১৯-০৩-২৬",dateEn:"2026-03-19",bar:"বৃহঃ", suhoor:"04:41",fajr:"04:46",dhuhr:"12:07",asr:"16:29",iftar:"18:10",isha:"19:23"},
+  {day:30,date:"২০-০৩-২৬",dateEn:"2026-03-20",bar:"শুক্র", suhoor:"04:40",fajr:"04:45",dhuhr:"12:07",asr:"16:29",iftar:"18:10",isha:"19:23"},
+];
+
+const DUAS=[
+  {t:"ইফতারের দোয়া – ১",a:"يَا وَاسِعَ الْمَغْفِرَةِ اغْفِرْ لِي ☽",u:"উচ্চারণ: ইয়া ওয়াসিআল মাগফিরাতি ইগফিরলী।",o:"অর্থ: হে মহান ক্ষমাকারী! আমাকে ক্ষমা করুন।"},
+  {t:"ইফতারের দোয়া – ২",a:"اَللّٰهُمَّ لَكَ صُمْتُ وَعَلٰى رِزْقِكَ اَفْطَرْتُ ☽",u:"উচ্চারণ: আল্লাহুম্মা লাকা সুমতু ওয়া আলা রিজকিকা আফতারতু।",o:"অর্থ: হে আল্লাহ! আপনার জন্যই রোজা রেখেছি এবং আপনার রিযিক দ্বারা ইফতার করছি।"},
+  {t:"সেহরীর নিয়ত",a:"نَوَيْتُ أَنْ أَصُومَ غَدًا مِنْ شَهْرِ رَمَضَانَ الْمُبَارَكِ ☽",u:"উচ্চারণ: নাওয়াইতু আন আসুমা গাদান মিন শাহরি রামাদ্বানাল মুবারাক।",o:"অর্থ: আগামীকাল পবিত্র রমজান মাসের রোজা রাখার নিয়ত করলাম।"},
+  {t:"ক্ষমা প্রার্থনার দোয়া",a:"رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ ☽",u:"উচ্চারণ: রাব্বানা যালামনা আনফুসানা ওয়া ইল্লাম তাগফিরলানা ওয়া তারহামনা লানাকুনান্না মিনাল খাসিরীন।",o:"অর্থ: হে রব! আমরা নিজেদের উপর জুলুম করেছি। ক্ষমা না করলে আমরা ক্ষতিগ্রস্তদের দলে পড়ব।"},
+  {t:"রোজাদারের দোয়া",a:"اَللّٰهُمَّ اِنِّيْ اَسْئَلُكَ رَحْمَتَكَ الَّتِيْ وَسِعَتْ كُلَّ شَيْءٍ ☽",u:"উচ্চারণ: আল্লাহুম্মা ইন্নি আসআলুকা রাহমাতাকাল্লাতি ওয়াসিআত কুল্লা শাইয়িন।",o:"অর্থ: হে আল্লাহ! সেই রহমত চাই যা সবকিছুকে ঘিরে আছে।"},
+  {t:"লাইলাতুল কদরের দোয়া",a:"اَللّٰهُمَّ اِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّيْ ☽",u:"উচ্চারণ: আল্লাহুম্মা ইন্নাকা আফুউউন তুহিব্বুল আফওয়া ফাআফু আন্নি।",o:"অর্থ: হে আল্লাহ! আপনি ক্ষমাশীল, ক্ষমা ভালোবাসেন, আমাকে ক্ষমা করুন।"},
+  {t:"জান্নাত লাভের দোয়া",a:"اَللّٰهُمَّ اِنِّيْ اَسْئَلُكَ الْجَنَّةَ وَاَعُوْذُ بِكَ مِنَ النَّارِ ☽",u:"উচ্চারণ: আল্লাহুম্মা ইন্নি আসআলুকাল জান্নাতা ওয়া আউযুবিকা মিনান্নার।",o:"অর্থ: হে আল্লাহ! জান্নাত চাই এবং জাহান্নাম থেকে আশ্রয় চাই।"},
+  {t:"তাওবার দোয়া",a:"رَبِّ اغْفِرْ لِيْ وَتُبْ عَلَيَّ اِنَّكَ اَنْتَ التَّوَّابُ الرَّحِيْمُ ☽",u:"উচ্চারণ: রাব্বিগফিরলি ওয়া তুব আলাইয়্যা ইন্নাকা আনতাত তাওয়্যাবুর রাহিম।",o:"অর্থ: হে রব! ক্ষমা করুন ও তাওবা কবুল করুন। আপনি তাওবা কবুলকারী, পরম দয়ালু।"},
+  {t:"কল্যাণ চাওয়ার দোয়া",a:"رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ ☽",u:"উচ্চারণ: রাব্বানা আতিনা ফিদ্দুনইয়া হাসানাতাওঁ ওয়া ফিল আখিরাতি হাসানাতাওঁ ওয়া ক্বিনা আযাবান্নার।",o:"অর্থ: হে রব! দুনিয়া ও আখিরাতে কল্যাণ দিন এবং জাহান্নাম থেকে রক্ষা করুন।"},
+  {t:"হেদায়েতের দোয়া",a:"اَللّٰهُمَّ اهْدِنِيْ فِيْمَنْ هَدَيْتَ وَعَافِنِيْ فِيْمَنْ عَافَيْتَ ☽",u:"উচ্চারণ: আল্লাহুম্মাহদিনি ফিমান হাদাইত ওয়া আফিনি ফিমান আফাইত।",o:"অর্থ: হে আল্লাহ! যাদের হেদায়েত দিয়েছেন, আমাকেও তাদের মধ্যে হেদায়েত দিন।"},
+];
+
+function f12(t){const[h,m]=t.split(':').map(Number);return`${h%12||12}:${String(m).padStart(2,'0')} ${h<12?'AM':'PM'}`;}
+function secs(t){const[h,m]=t.split(':').map(Number);return h*3600+m*60;}
+function bn(n){return String(n).replace(/[0-9]/g,d=>'০১২৩৪৫৬৭৮৯'[d]);}
+function tds(){const n=new Date();return`${n.getFullYear()}-${String(n.getMonth()+1).padStart(2,'0')}-${String(n.getDate()).padStart(2,'0')}`;}
+function tdi(){return D.findIndex(e=>e.dateEn===tds());}
+
+function buildTable(){
+  const idx=tdi();
+  document.getElementById('tableBody').innerHTML=D.map((e,i)=>{
+    const isT=i===idx,isPa=!isT&&new Date(e.dateEn)<new Date(tds());
+    return`<tr class="${isT?'today':isPa?'past':''}" id="row-${e.day}">
+      <td><span class="rn">${bn(e.day)}</span>${isT?'<span class="tbdg">আজ</span>':''}</td>
+      <td>${e.date}</td><td>${e.bar}</td>
+      <td class="tc">${f12(e.suhoor)}</td>
+      <td class="tc">${f12(e.iftar)}</td>
+    </tr>`;
+  }).join('');
+}
+
+function updateCard(){
+  const idx=tdi(),e=idx>=0?D[idx]:D[0];if(!e)return;
+  document.getElementById('todayRamadanTitle').textContent=idx>=0?`${bn(e.day)} রমজান ১৪৪৭ হিজরি`:'রমজান ১৪৪৭ হিজরি';
+  const n=new Date(),days=['রবিবার','সোমবার','মঙ্গলবার','বুধবার','বৃহস্পতিবার','শুক্রবার','শনিবার'];
+  document.getElementById('todayDateBn').textContent=`${days[n.getDay()]}, ${bn(n.getDate())}-${bn(n.getMonth()+1)}-${bn(n.getFullYear())}`;
+  document.getElementById('todaySuhoor').textContent=f12(e.suhoor);
+  document.getElementById('todayIftar').textContent=f12(e.iftar);
+  document.getElementById('pFajr').textContent=f12(e.fajr);
+  document.getElementById('pDhuhr').textContent=f12(e.dhuhr);
+  document.getElementById('pAsr').textContent=f12(e.asr);
+  document.getElementById('pMaghrib').textContent=f12(e.iftar);
+  document.getElementById('pIsha').textContent=f12(e.isha);
+}
+
+function updateCountdown(){
+  const idx=tdi();
+  if(idx<0){document.getElementById('countdownTimer').textContent='--:--:--';document.getElementById('countdownDesc').textContent='রমজান বাইরে';return;}
+  const e=D[idx],n=new Date(),now=n.getHours()*3600+n.getMinutes()*60+n.getSeconds();
+  const sh=secs(e.suhoor),ih=secs(e.iftar);
+  let diff,lbl;
+  if(now<sh){diff=sh-now;lbl='সাহরী শেষ হতে বাকি';}
+  else if(now<ih){diff=ih-now;lbl='আজকের ইফতার হতে বাকি';}
+  else{document.getElementById('countdownTimer').textContent='০০:০০:০০';document.getElementById('countdownDesc').textContent='✅ আজকের ইফতার হয়ে গেছে';return;}
+  const dh=Math.floor(diff/3600),dm=Math.floor((diff%3600)/60),ds=diff%60;
+  document.getElementById('countdownTimer').textContent=`${String(dh).padStart(2,'0')}:${String(dm).padStart(2,'0')}:${String(ds).padStart(2,'0')}`;
+  document.getElementById('countdownDesc').textContent=lbl;
+}
+
+function buildDuas(){
+  const idx=tdi(),day=idx>=0?D[idx].day:1;
+  const sub=document.getElementById('duaSub');
+  if(sub)sub.textContent=`– ${bn(day)} রমজান`;
+  const tot=DUAS.length,st=((day-1)*2)%tot;
+  document.getElementById('duaGrid').innerHTML=[DUAS[st%tot],DUAS[(st+1)%tot]].map(d=>`
+    <div class="dcard open">
+      <div class="dhead" onclick="this.parentElement.classList.toggle('open')">
+        <h4>🤲 ${d.t}</h4><div class="dtog">▾</div>
+      </div>
+      <div class="dbody">
+        <div class="arabic">${d.a}</div>
+        <div class="dlbl">উচ্চারণ</div><p class="uc">${d.u}</p>
+        <div class="dlbl" style="margin-top:8px">অর্থ</div><p class="ort">${d.o}</p>
+      </div>
+    </div>`).join('');
+}
+
+function scrollToToday(){const idx=tdi();if(idx>=0){const r=document.getElementById(`row-${D[idx].day}`);if(r)r.scrollIntoView({behavior:'smooth',block:'center'});}}
+function toggleDark(){document.body.classList.toggle('dark');}
+
+buildTable();updateCard();buildDuas();updateCountdown();
+setInterval(updateCountdown,1000);
+setTimeout(()=>{const idx=tdi();if(idx>=0){const r=document.getElementById(`row-${D[idx].day}`);if(r&&r.getBoundingClientRect().top>window.innerHeight*.65)r.scrollIntoView({behavior:'smooth',block:'center'});}},800);
+</script>
+</body>
+</html>
