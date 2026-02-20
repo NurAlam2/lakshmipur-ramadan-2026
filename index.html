@@ -28,16 +28,39 @@ body{
   box-shadow:0 0 40px rgba(0,0,0,.28);
 }
 
-/* DARK MODE */
-body.dark{
-  --bg:#0e1a12;--w:#162013;--gp:#152219;--bd:#1d3826;
-  --tx:#ddeee5;--txm:#8aaa94;--txl:#5a7a64;--tbg:#1e1a00;
-  --sh:0 3px 14px rgba(0,0,0,.32);
+/* ── IMPROVED DARK MODE CSS ── */
+body.dark {
+  --bg: #0b140e;
+  --w: #1a241d;
+  --gp: #223126;
+  --bd: #2d3f33;
+  --tx: #e8f1ec;   /* মেইন টেক্সট এখন আরও উজ্জ্বল */
+  --txm: #b0c4b8;  /* মিউটেড টেক্সট */
+  --txl: #8da697;  /* লেবেল টেক্সট */
+  --tbg: #282600;  /* আজকের দিনের হাইলাইট ব্যাকগ্রাউন্ড */
+  --sh: 0 4px 20px rgba(0,0,0,0.5);
 }
-body.dark .cdown{background:#1a1500;border-color:#3a2e00;}
-body.dark .btn{background:var(--w);border-color:var(--bd);}
-body.dark .btn.pri{background:var(--gm);color:#fff;border-color:var(--gm);}
 
+/* কার্ড এবং টেবিলের বর্ডার ও ব্যাকগ্রাউন্ড ফিক্স */
+body.dark .tcard, body.dark .today, body.dark .dcard {
+  background: var(--w);
+  border-color: var(--bd);
+}
+
+/* নামাজের সময় এবং অন্যান্য টেক্সটের কন্ট্রাস্ট বৃদ্ধি */
+body.dark .ptime { color: #52c78a; } 
+body.dark .tc { color: var(--goldl); } /* টেবিলের সাহরী-ইফতারের সময় */
+body.dark .cdtime { color: var(--goldl); }
+body.dark .cddesc { color: #f5d76e; }
+
+/* দোয়ার সেকশন ফিক্স */
+body.dark .arabic { background: #0f1a13; color: #9be6bc; }
+body.dark .ort { color: #f5d76e; }
+body.dark tr:not(.today) .rn { color: #fff; }
+
+/* বাটন ফিক্স */
+body.dark .btn { color: #fff; background: #223126; border-color: #3e5244; }
+body.dark .btn.pri { background: var(--gm); border-color: var(--gm); }
 /* ── HEADER ── */
 header{
   background:linear-gradient(155deg,#0a3d24 0%,var(--gm) 65%,#318055 100%);
